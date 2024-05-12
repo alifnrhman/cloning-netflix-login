@@ -3,33 +3,102 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="/img/netflixicon.ico" type="image/x-icon" />
       <title>Netflix Login Clone</title>
-      <style>
-         body {
-            background-image: url(/img/bg.jpg);
-            opacity: 0.8;
-         }
-
-         #logo {
-            width: 9.25rem;
-            margin-top: 10px;
-            margin-left: 300px;
-         }
-      </style>
    </head>
+   <style>
+      body {
+         padding: 0px;
+         margin: 0px;
+      }
+
+      .hero {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         min-height: 100vh;
+         position: relative;
+         overflow: hidden;
+         background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .logo {
+         width: 9.7rem;
+         margin-top: 19px;
+         margin-left: 360px;
+         position: absolute;
+         z-index: 1;
+      }
+
+      .bgimg {
+         position: fixed;
+         bottom: 0;
+         left: 0;
+         min-width: 100%;
+         min-height: 100%;
+         z-index: -2;
+      }
+
+      .card-container {
+         width: 50vh;
+         height: 82vh;
+         background-color: rgba(0, 0, 0, 0.7);
+         border-radius: 4px;
+         margin-top: 5vh;
+      }
+
+      .container-header {
+         color: white;
+         margin-top: 7vh;
+         margin-left: 7vh;
+      }
+
+      .form {
+         width: 100%;
+         height: 100%;
+         border: 1px solid red;
+      }
+
+      .input-container input {
+         width: 100%;
+         height: 6vh;
+         margin-bottom: 15px;
+         border-radius: 8px;
+         background-color: transparent;
+      }
+
+      .button-container input {
+         width: 100%;
+         height: 5vh;
+         border-radius: 8px;
+         background-color: red;
+         color: white;
+      }
+   </style>
    <body>
       <header>
-         <div>
-            <img src="/img/netflix.png" alt="Netflix" width="200px" id="logo" />
-         </div>
+         <img src="/img/netflixlogo.png" alt="Netflix Logo" class="logo" />
       </header>
-      <main>
-         <section>
-            <div class="box"></div>
-         </section>
-         <footer>
-            <div></div>
-         </footer>
-      </main>
+
+      <div class="hero">
+         <img src="/img/bg.jpg" alt="Netflix Background" class="bgimg" />
+         <div class="card-container">
+            <header class="container-header">
+               <h1>Sign In</h1>
+            </header>
+            <form class="form">
+               <div class="input-container">
+                  <input type="email" name="email" id="email" placeholder="Email" />
+                  <br />
+                  <input type="password" name="password" id="password" placeholder="Password" />
+                  <br />
+               </div>
+               <div class="button-container">
+                  <input type="button" value="Sign In" />
+               </div>
+            </form>
+            <footer></footer>
+         </div>
+      </div>
    </body>
 </html>
