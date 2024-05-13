@@ -4,6 +4,8 @@ This is my first front end project, in this project i'm trying to clone Netflix'
 
 ## Changelogs
 
+-  v0.3 (14/05/2024)
+   -  CHANGE: Sign in container and form improved
 -  v0.2 (12/05/2024)
    -  ADD: Sign in container and form
 -  v0.1 (11/05/2024)
